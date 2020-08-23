@@ -1,0 +1,26 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 21 Aug 2020 16:27:20 at https://boostifythemes.com/demo/html/ven/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://boostifythemes.com/demo/html/ven/index.html -O1 "C:\My Web Sites\Technorax" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:29:18	Warning: 	Retry after error -4 (No data (connection closed)) at link https://boostifythemes.com/demo/html/ven/assets/images/uploads/pagebanner/human.jpg (from https://boostifythemes.com/demo/html/ven/index.html)
+16:29:18	Warning: 	Retry after error -4 (No data (connection closed)) at link https://boostifythemes.com/demo/html/ven/assets/scripts/lightbox.js (from https://boostifythemes.com/demo/html/ven/index.html)
+16:29:18	Warning: 	Retry after error -4 (No data (connection closed)) at link https://boostifythemes.com/demo/html/ven/assets/styles/fonts/webfonts/fa-regular-400.woff2 (from https://boostifythemes.com/demo/html/ven/assets/styles/style.css)
+16:29:22	Warning: 	Retry after error -4 (No data (connection closed)) at link https://boostifythemes.com/demo/html/ven/assets/styles/fonts/montserrat/montserrat-v14-latin-500.svg (from https://boostifythemes.com/demo/html/ven/assets/styles/style.css)
+16:29:22	Warning: 	Retry after error -4 (No data (connection closed)) at link https://boostifythemes.com/demo/html/ven/assets/styles/fonts/Lato/lato-v15-latin-700.woff (from https://boostifythemes.com/demo/html/ven/assets/styles/style.css)
+16:29:23	Error: 	"Not Found" (404) at link https://boostifythemes.com/demo/html/ven/assets/styles/fontsLato/lato-v15-latin-700.woff2 (from https://boostifythemes.com/demo/html/ven/assets/styles/style.css)
+16:29:23	Warning: 	Retry after error -4 (No data (connection closed)) at link https://boostifythemes.com/demo/html/ven/assets/styles/fonts/Lato/lato-v15-latin-300.woff2 (from https://boostifythemes.com/demo/html/ven/assets/styles/style.css)
+16:29:23	Error: 	"Not Found" (404) at link https://boostifythemes.com/demo/html/ven/assets/styles/fontsLato/lato-v15-latin-900.woff2 (from https://boostifythemes.com/demo/html/ven/assets/styles/style.css)
+16:29:23	Warning: 	Retry after error -4 (No data (connection closed)) at link https://boostifythemes.com/demo/html/ven/assets/images/uploads/pagebanner/home-portfolio.jpg (from https://boostifythemes.com/demo/html/ven/assets/styles/style.css)
+16:29:23	Warning: 	Retry after error -4 (No data (connection closed)) at link https://boostifythemes.com/demo/html/ven/assets/images/uploads/blog/blog_single1.jpg (from https://boostifythemes.com/demo/html/ven/blog-single.html)
+16:29:23	Warning: 	Retry after error -4 (No data (connection closed)) at link https://boostifythemes.com/demo/html/ven/assets/images/uploads/venue/venue3.jpg (from https://boostifythemes.com/demo/html/ven/venue.html)
+16:29:23	Warning: 	Retry after error -4 (No data (connection closed)) at link https://boostifythemes.com/demo/html/ven/assets/images/Contact-mail.png (from https://boostifythemes.com/demo/html/ven/contact.html)
+16:29:24	Warning: 	Retry after error -4 (No data (connection closed)) at link https://boostifythemes.com/demo/html/ven/assets/styles/fonts/Lato/lato-v15-latin-300.woff2 (from https://boostifythemes.com/demo/html/ven/assets/styles/style.css)
+16:29:24	Warning: 	Retry after error -4 (No data (connection closed)) at link https://boostifythemes.com/demo/html/ven/assets/images/uploads/pagebanner/home-portfolio.jpg (from https://boostifythemes.com/demo/html/ven/assets/styles/style.css)
+16:29:24	Warning: 	Retry after error -4 (No data (connection closed)) at link https://boostifythemes.com/demo/html/ven/assets/images/uploads/blog/blog_single1.jpg (from https://boostifythemes.com/demo/html/ven/blog-single.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 7 seconds : 277 links scanned, 261 files written (15283320 bytes overall) [12233669 bytes received at 96328 bytes/sec], 4486925 bytes transferred using HTTP compression in 56 files, ratio 28%, 15.3 requests per connection
+(2 errors, 13 warnings, 0 messages)
