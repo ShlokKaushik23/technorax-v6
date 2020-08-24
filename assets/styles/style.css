@@ -9456,6 +9456,7 @@ html {
 .container-technorax,
 .lightbox-container {
   width: 100%;
+  z-index: 2;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -11448,7 +11449,7 @@ GENERAL
 --------------------------------------------------------------*/
 body {
   cursor: none;
-  
+
 }
 
 .cursor {
@@ -12975,7 +12976,7 @@ body {
 }
 
 .schedule-tab__item {
-  width: 33.333%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14050,7 +14051,7 @@ body {
 
 .speaker-slider__item > div:nth-child(3) {
   padding-left: 35px;
-  margin-top: 230px;
+  margin-top: 105px;
 }
 
 .speaker-slider__item .thumb-float-down {
@@ -15706,6 +15707,21 @@ body {
   width: calc(50% - 15px);
 }
 
+.technorax-schedule{
+  font-family: inherit;
+  background-color: #808080;
+  color: #fff;
+  font-weight: 400;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.technorax-schedule:hover{
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid #808080;
+  background-color: #000;
+
+}
 @media (max-width: 1200px) {
   .portfilio-1__second-tittle h2 {
     font-size: 50px;
@@ -17106,12 +17122,9 @@ HEADER
   top: 0;
   left: 0;
   z-index: 99;
-  /* IE 9 */
-  /* Safari 3-8 */
   transform: translateX(-100%);
   background-color: rgba(0, 0, 0, 0.95);
-  /* General link styles */
-  /* Kukuri */
+
 }
 
 .menu-nav .header__logo {
@@ -17313,6 +17326,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 100px;
+  width: 98%;
 }
 
 .header__logo {
@@ -17345,6 +17359,7 @@ header {
   position: relative;
   width: 23px;
   height: 23px;
+  margin-left: 20px;
 }
 
 .header__menu-icon::before {
@@ -17357,8 +17372,6 @@ header {
   height: 0;
   left: 50%;
   top: 50%;
-  /* IE 9 */
-  /* Safari 3-8 */
   transform: translate(-50%, -50%);
 }
 
