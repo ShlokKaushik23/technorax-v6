@@ -11653,9 +11653,10 @@ body {
 .pagebanner-brg--1 h3, .pagebanner-brg--3 h3 {
   line-height: 85px;
   font-family: Lato-700;
-  font-size: 85px;
+  font-size: 95px;
   color: transparent;
   margin: 0;
+  font-weight: bolder;
   background-image: url("../images/uploads/pagebanner/textbrg.jpg");
   background-position: center;
   background-size: cover;
@@ -11699,7 +11700,8 @@ body {
   }
   .pagebanner-brg--1 h3, .pagebanner-brg--3 h3 {
     line-height: 55px;
-    font-size: 55px;
+    font-size: 65px;
+    font-weight: bolder;
   }
 }
 
@@ -11920,10 +11922,16 @@ body {
   .pagebanner-brg--1__right {
     padding-top: 0 !important;
   }
-  .pagebanner-brg--1__info h2, .pagebanner-brg--1__info h3 {
-    line-height: 45px !important;
-    font-size: 40px !important;
+  .pagebanner-brg--1__info h2  {
+    line-height: 40px !important;
+    font-size: 45px !important;
+    font-weight: bolder;
   }
+  .pagebanner-brg--1__info h3 {
+   line-height: 50px !important;
+   font-size: 55px !important;
+   font-weight: bolder;
+ }
   .pagebanner-brg--3__left {
     padding: 0;
   }
