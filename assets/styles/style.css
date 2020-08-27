@@ -49,6 +49,7 @@ html {
  */
 body {
   margin: 0;
+
 }
 
 /**
@@ -424,7 +425,7 @@ template {
   text-align: center;
   font-size: 42px;
   margin-top: 0px;
-  color: #ffffff;
+  color: #fed501;
   font-weight: bold;
 }
 
@@ -6207,6 +6208,7 @@ readers do not read off random characters that represent icons */
  */
 /* FONT PATH
  * -------------------------- */
+
 @font-face {
   font-family: 'FontAwesome';
   src: url("fonts/webfonts/fontawesome-webfont4a83.eot?v=5.10.1");
@@ -9470,6 +9472,7 @@ html {
   .lightbox-container {
     max-width: 540px;
   }
+
 }
 
 @media (min-width: 768px) {
@@ -11634,6 +11637,7 @@ body {
 
 .pagebanner-brg--1__thumb img {
   display: inline-block;
+  width: 800px;
 }
 
 .pagebanner-brg--1 h5, .pagebanner-brg--3 h5 {
@@ -11645,7 +11649,8 @@ body {
 .pagebanner-brg--1 h2, .pagebanner-brg--3 h2 {
   line-height: 80px;
   font-family: "JosefinSans-100", sans-serif;
-  font-size: 80px;
+  font-size: 75px;
+  font-weight: bolder;
   color: #ffffff;
   margin: 30px 0 0 0;
 }
@@ -11812,6 +11817,8 @@ body {
 
 .pagebanner-brg--1__right {
   padding: 45px 0 0 70px;
+  text-align: center;
+  z-index: 100000;
 }
 
 .pagebanner-brg--1__right a {
@@ -12021,7 +12028,51 @@ body {
 }
 
 .blog-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   padding: 130px 0 128px;
+}
+
+
+.aboutieeeday{
+  height: 90vh;
+}
+.centermodal{
+position: relative;
+transition: translate(-50%, -50%);
+cursor: pointer;
+}
+.centermodal h2 {
+  margin-top: 50px;
+  font-size: 50px;
+  text-align: center;
+  line-height: 45px;
+}
+.containerone img{
+
+  display: block;
+  margin: 0 auto;
+
+
+}
+
+.containerone p{
+
+  margin-top: 30px;
+  padding: 0 40px;
+  font-size: 20px;
+  font-family: inherit;
+}
+.containerone p strong{
+  color: #3a74a8;
+}
+.knowmore{
+  color: red;
+  font-family: inherit;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .blog__item {
@@ -12868,6 +12919,7 @@ body {
   transform: scale(0);
 }
 
+
 .sponsor__item:hover img {
   -moz-filter: hue-rotate(0deg) saturate(0%) brightness(0%);
   -webkit-filter: hue-rotate(0deg) saturate(0%) brightness(0%);
@@ -12976,6 +13028,10 @@ body {
     color: #ffffff;
     margin: 40px 0 !important;
   }
+  /* .sponsor_item_jetBrains{
+    height: 80px;
+    weight: 50px;
+  } */
 }
 
 .schedule-tab {
@@ -17487,6 +17543,7 @@ header {
     font-size: 13px;
     height: 40px !important;
     line-height: 42px !important;
+    margin-left: 10px !important;
   }
 }
 

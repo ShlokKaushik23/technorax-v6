@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
-   
-    "use strict";   
+
+    "use strict";
     var controller = new ScrollMagic.Controller();
     var WDwidth = $(window).width();
 
@@ -72,7 +72,7 @@ $(document).ready(function(){
 
     function VerticalSlider($contain){
 
-        $($contain+'> .speaker-slider__item').each(function () {    
+        $($contain+'> .speaker-slider__item').each(function () {
             var next = $(this).next();
             if (!next.length) {
                 next = $(this).siblings(':first');
@@ -88,7 +88,7 @@ $(document).ready(function(){
 
         });
         $($contain).slick({
-        
+
             arrows: false,
             slidesToShow: 1,
             slidesToScroll: 3,
@@ -107,7 +107,7 @@ $(document).ready(function(){
                 settings: {
                 slidesToShow: 1,
                 slidesToScroll: 2,
-        
+
                 }
             },
             {
@@ -129,12 +129,12 @@ $(document).ready(function(){
                 translateY: [-500,0],
                 opacity:1,
                 easing: 'easeInSine',
-                delay: anime.stagger(50) 
+                delay: anime.stagger(50)
             });
         });
         $('.speaker-slider__arrow--down').on('click', function(){
             $($contain).slick("slickNext");
-            
+
             anime({
                 targets: '.slick-current .speaker-slider__item > div',
                 duration: function(t,i) {
@@ -143,9 +143,9 @@ $(document).ready(function(){
                 translateY: [500,0],
                 opacity:1,
                 easing: 'easeInSine',
-                delay: anime.stagger(50) 
+                delay: anime.stagger(50)
             });
-            
+
         });
 
 
@@ -193,7 +193,7 @@ $(document).ready(function(){
             translateX: [-270,0],
             translateY: [-270,0],
             easing: 'easeInSine',
-            delay: anime.stagger(50) 
+            delay: anime.stagger(50)
         });
     })
     .addTo(controller);
@@ -214,7 +214,7 @@ $(document).ready(function(){
             targets: '.nav-effect ul li',
             easing:'cubicBezier(.21,1.03,.55,1.09)',
             translateX: [-1300,0],
-            delay: anime.stagger(30) 
+            delay: anime.stagger(30)
         });
     });
     $(".menu-nav-close").on('click',function(){
@@ -228,32 +228,32 @@ $(document).ready(function(){
 
     });
 
-    var position = $(window).scrollTop() ; 
+    var position = $(window).scrollTop() ;
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if(scroll > position && scroll > 310) {
             if($('body').hasClass('lightbox-enabled') || $('.menu-nav').hasClass('menu-nav-active')){
-                $('header').removeClass('header-hide'); 
+                $('header').removeClass('header-hide');
             }
             else {
                 $('header').addClass('header-hide');
                 // $('#header-trans').removeClass('header-trans-1');
             }
         } else {
-            $('header').removeClass('header-hide'); 
+            $('header').removeClass('header-hide');
         }
 
         if(scroll > position && scroll < 310) {
             if($('body').hasClass('lightbox-enabled') || $('.menu-nav').hasClass('menu-nav-active')){
-                $('header').removeClass('header-hide'); 
+                $('header').removeClass('header-hide');
             }
             else {
                 $('header').addClass('header-hide');
                 // $('#header-trans').removeClass('header-trans-1');
             }
-            
+
         } else {
-            $('header').removeClass('header-hide'); 
+            $('header').removeClass('header-hide');
         }
         if( scroll > 310) {
             $('#header-trans').removeClass('header-trans-1');
@@ -266,7 +266,7 @@ $(document).ready(function(){
         position = scroll;
     });
     if($('.menu-nav').hasClass('menu-nav-active')){
-        $('header').removeClass('header-trans-1'); 
+        $('header').removeClass('header-trans-1');
     }
 //--------------------END NAV MENU BUTTON------------------------------------------------------
 
@@ -376,7 +376,7 @@ $(document).ready(function(){
 
 //=================================== SPEAKER LIST===============================
 //====================================================================================
-    
+
     function fadetoleft($ele){
         anime({
             targets: $ele,
@@ -421,7 +421,7 @@ $(document).ready(function(){
 // loadjs('assets/scripts/general/cursor.js');
     //================venue
     FlowCursor ('.venue-video__text__address','.venue-video__text__address');
-    
+
     // contact
     FlowCursor(".moving-btn",".moving-btn");
     //creative agency
@@ -436,9 +436,9 @@ $(document).ready(function(){
     FlowCursor ('.experience__text__link','.experience__text__link');
     FlowCursor ('.speaker-slider__arrow--up','.speaker-slider__arrow--up');
     FlowCursor ('.speaker-slider__arrow--down','.speaker-slider__arrow--down');
-    
+
     function FlowCursor ($hoverArea,$link) {
-    
+
         const link = document.querySelectorAll($hoverArea);
         const animateit = function (e) {
               const span = document.querySelector($link);
@@ -447,15 +447,15 @@ $(document).ready(function(){
               move = 25,
               xMove = x / width * (move * 2) - move,
               yMove = y / height * (move * 2) - move;
-    
+
               span.style.transform = `translate(${xMove}px, ${yMove}px)`;
-    
+
               if (e.type === 'mouseleave') span.style.transform = '';
         };
         link.forEach(b => b.addEventListener('mousemove', animateit));
         link.forEach(b => b.addEventListener('mouseleave', animateit));
     }
-    
+
 //================= Custom cusor==========================
 
     const cursor = document.querySelector('.cursor');
@@ -465,7 +465,7 @@ $(document).ready(function(){
             css: { left: e.clientX, top: e.clientY  }
         });
     };
-    function CursorFollower (e) { 
+    function CursorFollower (e) {
       TweenMax.to( cursorflow, 1.2, {
         css: { left: e.clientX -13, top: e.clientY -13 },
         ease: Elastic.easeOut
@@ -473,7 +473,7 @@ $(document).ready(function(){
     }
     window.addEventListener('mousemove', editCursor);
     window.addEventListener('mousemove', CursorFollower);
-    
+
 //===================== CURSOR TRANSFORM ON HOVER
 
     CursorTrans('h6');
@@ -495,7 +495,7 @@ $(document).ready(function(){
             TweenMax.to( cursorflow, 1.5, {
                 css: { scale: 1.5},
                 ease: Elastic.easeOut,
-           
+
             });
             $('.cursor').addClass('cursor-transform');
         });
@@ -516,7 +516,7 @@ $(document).ready(function(){
     CursorTurnWhite('footer');
     CursorTurnWhite('.menu-nav');
     CursorTurnWhite('.erropage');
-    
+
     function CursorTurnWhite($obj) {
 
         $($obj).on('mouseover',function(){
@@ -578,16 +578,15 @@ $(document).ready(function(){
     });
 //------------------ END VENUE EFFECT  ----------------------------------------
 
-    
+
 //------------------ SPEAKER PACKERY LAYOUT-------------------------------------
 //--------------------------------------------------------------------------
-            
+
     SpeakerPackery('.speaker-grid-1','.speaker-grid-1__item');
     function SpeakerPackery($contain,$item){
         $($contain).packery({
             itemSelector: $item,
         });
-
     }
 
 //------------------ Tittle Effect  ----------------------------------------
@@ -595,8 +594,8 @@ $(document).ready(function(){
 
     function TittleFloating1($tittle){
         var textWrapper = document.querySelector($tittle);
-        if (document.querySelector($tittle)) { 
-            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");   
+        if (document.querySelector($tittle)) {
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
             anime.timeline({loop: false})
             .add({
                 targets: $tittle+' span',
@@ -614,7 +613,7 @@ $(document).ready(function(){
     TitteEff2()
     function TitteEff2(){
         var textWrapper = document.querySelector('.tittle-eff2');
-        if (document.querySelector('.tittle-eff2')) { 
+        if (document.querySelector('.tittle-eff2')) {
             textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
             anime.timeline({loop: true})
             .add({
@@ -638,39 +637,39 @@ $(document).ready(function(){
 
 //-------------------------countdown timer--------------------------------------
 //---------------------------------------------------------------------------
-    count_down('#CD');
-    count_down('#CD2');
-    function count_down($area){
-        const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
-    
-        let countDown = new Date('Feb 9, 2020 15:03:00').getTime(),
-        x = setInterval(function() {
-    
-        let now = new Date().getTime(),
-            distance = countDown - now;
-        
-        var dayy = Math.floor(distance / (day));
-        var hourr = Math.floor((distance % (day)) / (hour));
-        var minn = Math.floor((distance % (hour)) / (minute));
-        var secs = Math.floor((distance % (minute)) / second);
-        function prezero(e){
-            if(e < 10 && e > -1) return "0"+e;
-            else return e;
-        }
-        if (document.querySelector('.pagebanner__count-down-area')) {
-            document.querySelector($area+"__day").innerText = prezero(dayy);
-            document.querySelector($area+"__hour").innerText = prezero(hourr);
-            document.querySelector($area+"__min").innerText = prezero(minn);
-            document.querySelector($area+"__sec").innerText = prezero(secs);
-        }
-        if (distance < 0) {
-            clearInterval(x);
-       }  
-        }, second);
-    }
+    // count_down('#CD');
+    // count_down('#CD2');
+    // function count_down($area){
+    //     const second = 1000,
+    //     minute = second * 60,
+    //     hour = minute * 60,
+    //     day = hour * 24;
+    //
+    //     let countDown = new Date('Feb 9, 2020 15:03:00').getTime(),
+    //     x = setInterval(function() {
+    //
+    //     let now = new Date().getTime(),
+    //         distance = countDown - now;
+    //
+    //     var dayy = Math.floor(distance / (day));
+    //     var hourr = Math.floor((distance % (day)) / (hour));
+    //     var minn = Math.floor((distance % (hour)) / (minute));
+    //     var secs = Math.floor((distance % (minute)) / second);
+    //     function prezero(e){
+    //         if(e < 10 && e > -1) return "0"+e;
+    //         else return e;
+    //     }
+    //     if (document.querySelector('.pagebanner__count-down-area')) {
+    //         document.querySelector($area+"__day").innerText = prezero(dayy);
+    //         document.querySelector($area+"__hour").innerText = prezero(hourr);
+    //         document.querySelector($area+"__min").innerText = prezero(minn);
+    //         document.querySelector($area+"__sec").innerText = prezero(secs);
+    //     }
+    //     if (distance < 0) {
+    //         clearInterval(x);
+    //    }
+    //     }, second);
+    // }
  //---------------------------end countdown timer------------------------------------------------
 
     $('.pagebanner-2').slick({
@@ -706,20 +705,20 @@ $(document).ready(function(){
             $($iframe).attr('src', href );
 
         } );
-        
+
         $($video+'__btn-close').on('click', function() {
             modal.css({"visibility": "hidden"});
             $($iframe).removeAttr('src');
-        
+
         });
         close.on('click', function() {
             modal.css({"visibility": "hidden"});
             $($iframe).removeAttr('src');
-        });  
+        });
     }
     PreviewVideo('.preview-video','.video');
 
-    // testimonial 
+    // testimonial
     $('.testimonial').slick({
         speed:1000,
         slidesToShow: 1,
@@ -760,7 +759,7 @@ $(document).ready(function(){
 
 
 //===========================  PORTFOLIO 2 ==============================
-    // porfolio-2 height    
+    // porfolio-2 height
     var port1hnor = $('.portfilio-1__item').width();
     var port1h = $('.portfilio-1__item__2w').width();
     $('.portfilio-1__item__2h').css('height',port1h+'px');
@@ -815,23 +814,23 @@ $(window).on("load", function () {
         horizontalOrder: true,
         gutter:30
         }
-        
+
     });
-    
+
     //porfolio
     $('.portfilio-1').isotope({
         itemSelector: '.portfilio-1__item',
         masonry: {
             columnWidth: '.portfilio-1__item',
             gutter:30
-        } 
+        }
     });
     anime({
         targets: '.portfilio-1__category__item',
         easing:'cubicBezier(.21,1.03,.55,1.09)',
         translateX: [-1300,0],
         opacity:[0,1],
-        delay: anime.stagger(50) 
+        delay: anime.stagger(50)
     });
 
     $('.portfolio-2').isotope({
@@ -858,7 +857,7 @@ $(window).on("load", function () {
             translateY: [1300,0],
             opacity:[0,1],
             duration:300,
-            delay: anime.stagger(30) 
+            delay: anime.stagger(30)
         });
     }
 
@@ -871,7 +870,7 @@ $(window).on("load", function () {
             if(filter == '*')   eleCateNum = $('.portfolio-3__grid a').length;
             if(eleCateNum < 10 && eleCateNum > 0) return '0'+eleCateNum;
             else return eleCateNum;
-            
+
         }
         $(this).append('<span>'+countCate()+'</span>');
     });
@@ -913,11 +912,3 @@ $(window).on("load", function () {
 });
 
 //--------------------------- END LOADING-------------------------------------------
-
-
-
-
-
-
-
-
