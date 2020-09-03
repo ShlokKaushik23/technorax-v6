@@ -15,11 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     script.onerror = function () {
         document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
-            window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
+            window.location.href = 'https://devfolio.co/external-appl' + devfolioOptions.key;
         });
     }
 });
-
 
 
 $(document).ready(function(){
