@@ -9476,6 +9476,7 @@ html {
     font-weight: 600;
     padding: 12px 20px;
     text-align: center;
+    text-decoration: none;
     text-transform: lowercase;
 
 }
@@ -9487,8 +9488,7 @@ html {
 
 #devfolio-apply-now:hover {
     background-color: #2954BF !important;
-    text-decoration: none;
-
+    
 }
 
 
@@ -11340,7 +11340,8 @@ img {
 }
 
 .moving-btn {
-  position: relative;
+  position: absolute;
+  top: 20px;
 }
 
 .loader-spin {
@@ -12671,6 +12672,8 @@ cursor: pointer;
 .fillin-form .fillin-form__submit {
   display: inline-block;
   position: relative;
+  display: grid;
+  place-items: center;
 }
 
 @media (max-width: 991px) {
@@ -12686,10 +12689,10 @@ cursor: pointer;
 }
 
 .fillin-form .fillin-form__submit svg {
-  position: absolute;
+  position: relative;
   width: 100px;
-  top: -30px;
-  left: -30px;
+  top: -6px;
+  left: -3px;
 }
 
 .fillin-form .fillin-form__submit svg path {
@@ -12841,7 +12844,8 @@ cursor: pointer;
 }
 
 .contact-info__item-left {
-  padding-left: 70px;
+  padding-left: 160px;
+
 }
 
 @media screen and (max-width: 1199px) {
@@ -17477,6 +17481,7 @@ header {
   transition: all 0.5s cubic-bezier(0, 0, 0.23, 1);
   background-position: 0%;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .header__menu-icon {
@@ -17600,11 +17605,16 @@ header {
   }
   .header__buy-ticket {
     width: 100px !important;
-    font-size: 13px;
+    font-size: 11px;
     height: 40px !important;
     line-height: 42px !important;
     margin-left: 10px !important;
   }
+  .header__buy-ticket p {
+    padding-top: 4px;
+    font-size: 10px;
+    color: white;
+}
 }
 
 .header-trans-1 {
