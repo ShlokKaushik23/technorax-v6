@@ -9488,7 +9488,7 @@ html {
 
 #devfolio-apply-now:hover {
     background-color: #2954BF !important;
-    
+
 }
 
 
@@ -14250,9 +14250,7 @@ cursor: pointer;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -moz-filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  
 }
 
 @media (max-width: 1200px) {
