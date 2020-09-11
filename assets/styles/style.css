@@ -16336,7 +16336,7 @@ cursor: pointer;
   clip-path: circle(100% at 50% 50%);
 }
 
-.portfolio-3 .portfilio-3__item img {
+.portfolio-3 .portfilio-3__item video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
