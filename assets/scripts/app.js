@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     let devfolioOptions = {
         buttonSelector: '#devfolio-apply-now',
-        key: 'myhackathonkey',
+        key: 'thacks3',
     }
 
     let script = document.createElement('script');
